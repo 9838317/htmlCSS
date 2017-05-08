@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style>
+
+#mother > li
+{
+    width: 200px;
+    background: #f1f;
+}
+
+.hided
+{
+/*
+    When we use the ul version, one problem is that the drop down menu is not aligned.
+    In this case, we need to try the padding and margin in order to make elements aligned.
+*/
+    list-style: none;
+    margin-left: 0;
+    padding: 0 ;
+    position: absolute;
+    display: none;
+}
+
+#hoverLi:hover .hided
+{
+    display: inline-block;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+<ul id = "mother">
+
+    <li>canSee</li>
+    <li id = "hoverLi">canSee
+        <ul class = "hided">
+            <li>noSee</li>
+            <li>noSee</li>
+            <li>noSee</li>
+            <li>noSee</li>
+        </ul>
+    </li>
+    <li>canSee</li>
+    <li>canSee</li>
+
+</ul>
+
+  </body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+/**
+  *  u stands for up;
+  *  m stands for middle;
+  *  f stands for footer;
+  *  l stands for left;
+  *  r stands for right.
+ **/
+
+/**
+     We won't apply the same css block for different html nodes here, for example, we won't put the following codes:
+
+        div, p, ul
+        {
+        	display: static;
+        	float: left: 
+        }
+    
+    That is to say, we won't share the same block among the elements. The reason is that, later when we try to rewrite the webpage with react, too much inheritance/sharing of css usually makes the page difficult to be splited into basic react elements.
+ **/
+
+*
+{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+	font-family: "monospace";
+	height: 768px;
+    background-color: #ddd;
+}
+
+#u
+{   
+	background:url("crop_1.jpg");
+    background-size:cover;	
+}
+
+nav
+{
+    height:60px;
+    
+}
+#u-ul-navigation
+{
+	float: right;
+	margin-right:40px;
+	border-bottom: 2px solid #333;
+}
+#u-ul-navigation > li
+{
+	display: inline-block;
+    width:60px;
+    height:58px;
+    text-align:center;	
+}
+
+#u-ul-navigation > li > a
+{
+    height:50px;
+    margin-top: 20px;
+    font-size:14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+#u-ul-navigation li:hover 
+{
+    background-color: #888;
+    border-bottom: 2px solid #1f1;
+}
+#u-placeholder
+{
+    height:240px;
+    border-bottom: 2px solid #333;
+}
+#m-l
+{
+    width:15%;
+    height: 650px;
+    background-color: #fff;
+
+    margin: 2%;
+	float: left;
+
+    box-shadow:25px 25px 10px 5px #848484;        
+}
+#m-m
+{
+    width:58%;
+    height: 650px;
+    background-color: #fff;
+
+    margin: 2%;
+    display: inline-block;
+
+    box-shadow:25px 25px 10px 5px #848484;        
+}
+#m-r
+{
+    width:15%;
+    height: 650px;
+    background-color: #fff;
+
+    margin: 2%;
+	float: right;
+
+    box-shadow:25px 25px 10px 5px #848484;    
+
+}
+
+#f
+{
+	padding: 20px;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    background-color: #111;
+}
+
+</style>
+<body>
+<section id = "u">
+    <nav>
+        <ul id = "u-ul-navigation">
+            <li><a href = "#">博客</a></li>
+            <li><a href = "#">分类</a></li>
+            <li><a href = "#">标签</a></li>
+            <li><a href = "#">关于我</a></li>
+            <li><a href = "#">注册</a></li> 
+        </ul>
+    </nav>
+    <registerPlaceholder>
+    </registerPlaceholder>
+
+    <div id = "u-placeholder">
+    </div>
+
+</section><!--end of section[id="u"]-->
+
+<section id = "m">
+    <div id = "m-l">
+        <p>为人民服务</p>
+        <p>serve the people</p>
+    </div>
+    <div id = "m-m">
+        <p>为人民服务</p>
+        <p>serve the people</p>
+    </div>
+    <div id = "m-r">
+        <p>为人民服务</p>
+        <p>serve the people</p>
+    </div>
+</section><!--end of section[id="m"]-->
+
+<footer id = "f">
+<p>版权所有</p>
+</footer>
+
+
+</body>
+</html>
+
+<!--section middle done-->
+
+
+
+
+

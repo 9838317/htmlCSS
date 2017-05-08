@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+
+<style>
+#mother
+{
+    background-color: #f11;
+    margin: 10px;
+    padding: 10px;
+}
+#mother > li
+{
+    min-width: 50px;
+    background-color: #fdf;
+    display: inline-block;
+}
+ .hideLevelFirst, .hideLevelSecond
+{
+    min-width:150px; 
+    background-color: #11f;
+    display: none;
+    padding: 0;
+}
+.hideLevelFirst, .hideLevelSecond
+{
+    list-style: none;
+    position: absolute;
+}
+#showLevelFirst:hover .hideLevelFirst
+{
+    display: block;
+}
+#showLevelSecond:hover .hideLevelSecond
+{
+    display: inline-block; 
+}
+</style>
+
+<body>
+<ul id = "mother">
+    <li>level 1</li>
+    <li>level 1</li>
+    <li id = "showLevelFirst">level 1
+        <ul class = "hideLevelFirst">
+            <li>visible</li>
+            <li>visible</li>
+            <li id = "showLevelSecond" >innerinnerinner 
+
+                <ul class = "hideLevelSecond">
+                    <li>very inner</li>
+                    <li>very inner</li>
+                    <li>very inner</li>
+                    <li>very inner</li>
+                </ul>         
+            </li>               
+            <li>visible</li>
+        </ul>
+    </li>
+</ul>
+
+  </body>
+</html>

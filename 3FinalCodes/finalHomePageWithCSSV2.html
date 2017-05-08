@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+/**
+  *  u stands for up;
+  *  m stands for middle;
+  *  f stands for footer;
+  *  l stands for left;
+  *  r stands for right.
+ **/
+
+/**
+     We won't apply the same css block for different html nodes here, for example, we won't put the following codes:
+
+        div, p, ul
+        {
+        	display: static;
+        	float: left: 
+        }
+    
+    That is to say, we won't share the same block among the elements. The reason is that, later when we try to rewrite the webpage with react, too much inheritance/sharing of css usually makes the page difficult to be splited into basic react elements.
+ **/
+
+*
+{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+	height: 768px;
+    background-color: #ddd;
+}
+
+#u
+{   
+	background:url("crop_1.jpg");
+    background-size:cover;	
+}
+
+nav
+{
+    height:60px;
+    
+}
+#u-ul-navigation
+{
+	float: right;
+	margin-right:40px;
+	border-bottom: 2px solid #333;
+}
+#u-ul-navigation > li
+{
+	display: inline-block;
+    width:60px;
+    height:58px;
+    text-align:center;	
+}
+
+#u-ul-navigation > li > a
+{
+    height:50px;
+    margin-top: 20px;
+    font-size:14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#u-ul-navigation li:hover 
+{
+    background-color: #888;
+    border-bottom: 2px solid #1f1;
+}
+
+
+#u-placeholder
+{
+    height:240px;
+    border-bottom: 2px solid #333;
+}
+
+#ml
+{
+	float: left;
+    background-color: #ff1;
+    height:100px;   
+    width:20%;
+}
+
+#mm
+{
+    background-color: #ff2;
+    height:100px;
+    display: inline-block;
+    width:60%;
+}
+
+#mr
+{
+	float: right;
+    background-color: #ff3;
+    height:100px;
+    width:20%;
+}
+</style>
+<body>
+<section id = "u">
+    <nav>
+        <ul id = "u-ul-navigation">
+            <li><a href = "#">博客</a></li>
+            <li><a href = "#">分类</a></li>
+            <li><a href = "#">标签</a></li>
+            <li><a href = "#">关于我</a></li>
+            <li><a href = "#">注册</a></li> 
+        </ul>
+    </nav>
+    <registerPlaceholder>
+    </registerPlaceholder>
+
+    <div id = "u-placeholder">
+    </div>
+
+</section> <!--end of section[id=u]>
+
+<sectionMiddle>
+<div id = "ml">a</div>
+<div id = "mm"> b</div>
+<div id = "mr">c</div>
+</sectionMiddle>
+
+<footer>
+</footer>
+
+</body>
+</html>
+
+<!--section middle done-->
+
+
+
+
+

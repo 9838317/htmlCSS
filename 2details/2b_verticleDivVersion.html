@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#mother > li
+{
+    display: inline-block;
+}
+
+.hided
+{
+    position: absolute;
+    display: none;
+}
+
+#hoverA:hover .hided 
+{
+    display: block;
+}
+.hided > a
+{
+    display: block;
+}
+
+</style>
+</head>
+<body>
+
+<ul id = "mother">
+  <li>Home</li>
+  <li>Home</li>
+  <li>Home</li>  
+  <li id="hoverA">Dropdown
+    <div class="hided">
+
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+
+    </div>
+  </li>
+</ul>
+
+</body>
+</html>
